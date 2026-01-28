@@ -1,3 +1,5 @@
+export const runtime = 'edge'; 
+
 export default function BlogArticle({ params }: { params: { slug: string } }) {
   // 실제로는 여기서 slug에 맞는 마크다운 파일을 불러오겠지만,
   // 일단 애드센스 승인용으로는 더미 콘텐츠만 있어도 됩니다.
