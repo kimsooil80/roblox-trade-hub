@@ -1,0 +1,72 @@
+{
+  "id": "bloxfruits",
+  "name": "Blox Fruits",
+  "description": "Blox Fruits 최신 트레이드 가치 계산기 및 티어표",
+  "meta": {
+    "title": "Blox Fruits Value Calculator & Tier List",
+    "description": "실시간 Blox Fruits 아이템 시세와 트레이드 공정성을 계산해보세요."
+  },
+  "theme": {
+    "primaryColor": "blue-600",
+    "secondaryColor": "blue-100",
+    "bgGradient": "from-blue-50 to-indigo-50"
+  },
+  "currencySymbol": "$",
+  "lastUpdated": "2026-01-28",
+  "items": [
+    {
+      "id": "kitsune",
+      "name": "Kitsune",
+      "type": "fruit",
+      "rarity": "mythical",
+      "value": 130000000,
+      "demand": 10,
+      "image": "/images/bloxfruits/kitsune.png"
+    },
+    {
+      "id": "dragon",
+      "name": "Dragon (Rework)",
+      "type": "fruit",
+      "rarity": "mythical",
+      "value": 180000000,
+      "demand": 10,
+      "image": "/images/bloxfruits/dragon.png"
+    },
+    {
+      "id": "leopard",
+      "name": "Leopard",
+      "type": "fruit",
+      "rarity": "mythical",
+      "value": 40000000,
+      "demand": 8,
+      "image": "/images/bloxfruits/leopard.png"
+    },
+    {
+      "id": "dough",
+      "name": "Dough",
+      "type": "fruit",
+      "rarity": "mythical",
+      "value": 20000000,
+      "demand": 9,
+      "image": "/images/bloxfruits/dough.png"
+    },
+    {
+      "id": "buddha",
+      "name": "Buddha",
+      "type": "fruit",
+      "rarity": "legendary",
+      "value": 6000000,
+      "demand": 10,
+      "image": "/images/bloxfruits/buddha.png"
+    },
+     {
+      "id": "rocket",
+      "name": "Rocket",
+      "type": "fruit",
+      "rarity": "common",
+      "value": 5000,
+      "demand": 1,
+      "image": "/images/bloxfruits/rocket.png"
+    }
+  ]
+}
