@@ -49,6 +49,9 @@ export default function TermsOfServicePage() {
             <li>Not scrape, copy, or redistribute our content without permission</li>
             <li>Not use automated tools to access the website excessively</li>
           </ul>
+          <p className="mb-4">
+            <strong>No Real Money Trading:</strong> You agree not to use our service to facilitate the buying, selling, or trading of Roblox accounts or in-game items for real-world currency. We strictly prohibit any form of Real Money Trading (RMT).
+          </p>
           
           <h2 className="text-xl font-semibold mt-6 mb-3">6. Intellectual Property</h2>
           <p className="mb-4">
@@ -80,7 +83,7 @@ export default function TermsOfServicePage() {
           
           <h2 className="text-xl font-semibold mt-6 mb-3">11. Governing Law</h2>
           <p className="mb-4">
-            These terms shall be governed by and construed in accordance with applicable laws, without regard to conflict of law provisions.
+            These terms shall be governed by and construed in accordance with the laws of the Republic of Korea, without regard to its conflict of law provisions. Any disputes arising from these terms shall be subject to the exclusive jurisdiction of the courts located in South Korea.
           </p>
         </div>
         
