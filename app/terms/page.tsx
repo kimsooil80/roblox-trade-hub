@@ -82,14 +82,6 @@ export default function TermsOfServicePage() {
           <p className="mb-4">
             These terms shall be governed by and construed in accordance with applicable laws, without regard to conflict of law provisions.
           </p>
-          
-          <h2 className="text-xl font-semibold mt-6 mb-3">12. Contact Us</h2>
-          <p className="mb-4">
-            If you have any questions about these Terms of Service, please contact us at:
-          </p>
-          <p className="mb-4">
-            Email: contact@robloxtradehub.com
-          </p>
         </div>
         
         <div className="mt-8 pt-6 border-t">

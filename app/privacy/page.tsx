@@ -73,14 +73,6 @@ export default function PrivacyPolicyPage() {
           <p className="mb-4">
             We may update this privacy policy from time to time. Any changes will be posted on this page with an updated revision date.
           </p>
-          
-          <h2 className="text-xl font-semibold mt-6 mb-3">10. Contact Us</h2>
-          <p className="mb-4">
-            If you have any questions about this privacy policy, please contact us at:
-          </p>
-          <p className="mb-4">
-            Email: contact@robloxtradehub.com
-          </p>
         </div>
         
         <div className="mt-8 pt-6 border-t">
