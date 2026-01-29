@@ -1,4 +1,5 @@
 import { Navbar } from '@/components/shared/navbar';
+import { Footer } from '@/components/shared/footer';
 import { LocaleProvider } from '@/lib/locale-context';
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
@@ -36,10 +37,13 @@ export default function RootLayout({
       <head>
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7281138674348867" crossOrigin="anonymous"></script>
       </head>
-      <body className={`${geistSans.variable} ${geistMono.variable}`} suppressHydrationWarning>
+      <body className={`${geistSans.variable} ${geistMono.variable} min-h-screen flex flex-col`} suppressHydrationWarning>
         <LocaleProvider>
           <Navbar />
-          {children}
+          <div className="flex-grow">
+            {children}
+          </div>
+          <Footer />
         </LocaleProvider>
       </body>
     </html>
