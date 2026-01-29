@@ -7,6 +7,8 @@ import { formatValue } from '@/lib/game-data';
 import { ItemCard } from './item-card';
 import { Button } from '@/components/ui/button';
 import { ArrowRightLeft, Trash2 } from 'lucide-react';
+import { useLocale } from '@/lib/locale-context';
+import { getTranslation, TranslationKey } from '@/lib/i18n';
 
 interface CalculatorProps {
   gameData: GameConfig;
@@ -14,6 +16,8 @@ interface CalculatorProps {
 
 export function TradeCalculator({ gameData }: CalculatorProps) {
   const { myOffer, theirOffer, addToMyOffer, addToTheirOffer, removeFromMyOffer, removeFromTheirOffer, reset } = useTradeStore();
+  const { locale } = useLocale();
+  const t = (key: TranslationKey) => getTranslation(locale, key);
   
   // 현재 누구의 인벤토리를 보고 있는지 (true: 나, false: 상대)
   const [isSelectingForMe, setIsSelectingForMe] = useState(true);
@@ -25,17 +29,17 @@ export function TradeCalculator({ gameData }: CalculatorProps) {
 
   // 결과 판정 텍스트
   const getResult = () => {
-    if (myTotal === 0 && theirTotal === 0) return "아이템을 선택하세요";
-    if (Math.abs(diff) < 1000) return "공정 거래 (FAIR)";
+    if (myTotal === 0 && theirTotal === 0) return t('selectItems');
+    if (Math.abs(diff) < 1000) return t('fairTrade');
     
     // 이득/손해 퍼센트
     const base = myTotal === 0 ? 1 : myTotal;
     const percent = (diff / base) * 100;
     
-    if (percent > 10) return "개이득 (BIG WIN) 🚀";
-    if (percent > 0) return "이득 (WIN) 😊";
-    if (percent > -10) return "손해 (LOSE) 😢";
-    return "개손해 (BIG LOSE) 😱";
+    if (percent > 10) return t('bigWin');
+    if (percent > 0) return t('win');
+    if (percent > -10) return t('lose');
+    return t('bigLose');
   };
 
   return (
@@ -44,7 +48,7 @@ export function TradeCalculator({ gameData }: CalculatorProps) {
       <div className="bg-white rounded-xl p-6 shadow-lg text-center border-2 border-slate-200 sticky top-2 z-10">
         <h2 className="text-2xl font-black text-slate-800">{getResult()}</h2>
         <p className={`text-sm font-bold ${diff >= 0 ? 'text-green-600' : 'text-red-500'}`}>
-          차이: {diff > 0 ? '+' : ''}{formatValue(diff)}
+          {t('difference')}: {diff > 0 ? '+' : ''}{formatValue(diff)}
         </p>
       </div>
 
@@ -56,7 +60,7 @@ export function TradeCalculator({ gameData }: CalculatorProps) {
           onClick={() => setIsSelectingForMe(true)}
         >
           <div className="flex justify-between items-center mb-4">
-            <h3 className="font-bold text-blue-800">나의 제안 (You)</h3>
+            <h3 className="font-bold text-blue-800">{t('myOffer')}</h3>
             <span className="bg-blue-200 text-blue-800 px-2 py-1 rounded text-sm font-bold">${formatValue(myTotal)}</span>
           </div>
           
@@ -72,7 +76,7 @@ export function TradeCalculator({ gameData }: CalculatorProps) {
                 </button>
               </div>
             ))}
-            {myOffer.length === 0 && <div className="col-span-3 text-center text-gray-400 py-8">여기를 클릭하고 아이템을 추가하세요</div>}
+            {myOffer.length === 0 && <div className="col-span-3 text-center text-gray-400 py-8">{t('clickToAdd')}</div>}
           </div>
         </div>
 
@@ -82,7 +86,7 @@ export function TradeCalculator({ gameData }: CalculatorProps) {
           onClick={() => setIsSelectingForMe(false)}
         >
           <div className="flex justify-between items-center mb-4">
-            <h3 className="font-bold text-red-800">상대방 제안 (Them)</h3>
+            <h3 className="font-bold text-red-800">{t('theirOffer')}</h3>
             <span className="bg-red-200 text-red-800 px-2 py-1 rounded text-sm font-bold">${formatValue(theirTotal)}</span>
           </div>
           
@@ -98,7 +102,7 @@ export function TradeCalculator({ gameData }: CalculatorProps) {
                 </button>
               </div>
             ))}
-             {theirOffer.length === 0 && <div className="col-span-3 text-center text-gray-400 py-8">여기를 클릭하고 아이템을 추가하세요</div>}
+             {theirOffer.length === 0 && <div className="col-span-3 text-center text-gray-400 py-8">{t('clickToAdd')}</div>}
           </div>
         </div>
       </div>
@@ -106,13 +110,13 @@ export function TradeCalculator({ gameData }: CalculatorProps) {
       {/* 초기화 버튼 */}
       <div className="flex justify-center">
          <Button variant="outline" onClick={reset} className="gap-2">
-            <ArrowRightLeft size={16} /> 초기화
+            <ArrowRightLeft size={16} /> {t('reset')}
          </Button>
       </div>
 
       {/* 3. 아이템 선택 리스트 (Inventory) */}
       <div className="bg-white rounded-xl p-6 border shadow-sm">
-        <h3 className="font-bold text-lg mb-4">아이템 선택 ({isSelectingForMe ? '나에게 추가' : '상대에게 추가'})</h3>
+        <h3 className="font-bold text-lg mb-4">{t('selectItem')} ({isSelectingForMe ? t('addToMe') : t('addToThem')})</h3>
         <div className="grid grid-cols-3 md:grid-cols-5 lg:grid-cols-6 gap-3">
           {gameData.items.map((item) => (
             <ItemCard 

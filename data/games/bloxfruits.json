@@ -1,10 +1,10 @@
 {
   "id": "bloxfruits",
   "name": "Blox Fruits",
-  "description": "Blox Fruits 최신 트레이드 가치 계산기 및 티어표",
+  "description": "Blox Fruits Value Calculator & Tier List (January 2026)",
   "meta": {
-    "title": "Blox Fruits Value Calculator & Tier List",
-    "description": "실시간 Blox Fruits 아이템 시세와 트레이드 공정성을 계산해보세요."
+    "title": "Blox Fruits Value Calculator - Realtime Prices",
+    "description": "Calculate fair trades for Kitsune, Dragon, and all fruits with real-time values from darkkitsune.com"
   },
   "theme": {
     "primaryColor": "blue-600",
@@ -12,61 +12,371 @@
     "bgGradient": "from-blue-50 to-indigo-50"
   },
   "currencySymbol": "$",
-  "lastUpdated": "2026-01-28",
+  "lastUpdated": "2026-01-29",
   "items": [
+    {
+      "id": "west-dragon",
+      "name": "West Dragon",
+      "value": 3200000000,
+      "rarity": "mythical",
+      "image": "/images/bloxfruits/west-dragon.png"
+    },
+    {
+      "id": "east-dragon",
+      "name": "East Dragon",
+      "value": 3000000000,
+      "rarity": "mythical",
+      "image": "/images/bloxfruits/east-dragon.png"
+    },
+    {
+      "id": "dragon-token",
+      "name": "Dragon Token",
+      "value": 2700000000,
+      "rarity": "mythical",
+      "image": "/images/bloxfruits/dragon-token.png"
+    },
     {
       "id": "kitsune",
       "name": "Kitsune",
-      "type": "fruit",
+      "value": 400000000,
       "rarity": "mythical",
-      "value": 130000000,
-      "demand": 10,
       "image": "/images/bloxfruits/kitsune.png"
     },
     {
-      "id": "dragon",
-      "name": "Dragon (Rework)",
-      "type": "fruit",
-      "rarity": "mythical",
+      "id": "control",
+      "name": "Control",
       "value": 180000000,
-      "demand": 10,
-      "image": "/images/bloxfruits/dragon.png"
+      "rarity": "mythical",
+      "image": "/images/bloxfruits/control.png"
     },
     {
-      "id": "leopard",
-      "name": "Leopard",
-      "type": "fruit",
+      "id": "tiger",
+      "name": "Tiger",
+      "value": 165000000,
       "rarity": "mythical",
-      "value": 40000000,
-      "demand": 8,
-      "image": "/images/bloxfruits/leopard.png"
+      "image": "/images/bloxfruits/tiger.png"
+    },
+    {
+      "id": "yeti",
+      "name": "Yeti",
+      "value": 160000000,
+      "rarity": "mythical",
+      "image": "/images/bloxfruits/yeti.png"
+    },
+    {
+      "id": "gas",
+      "name": "Gas",
+      "value": 75000000,
+      "rarity": "mythical",
+      "image": "/images/bloxfruits/gas.png"
     },
     {
       "id": "dough",
       "name": "Dough",
-      "type": "fruit",
+      "value": 30000000,
       "rarity": "mythical",
-      "value": 20000000,
-      "demand": 9,
       "image": "/images/bloxfruits/dough.png"
+    },
+    {
+      "id": "t-rex",
+      "name": "T-Rex",
+      "value": 25000000,
+      "rarity": "mythical",
+      "image": "/images/bloxfruits/t-rex.png"
+    },
+    {
+      "id": "gravity",
+      "name": "Gravity",
+      "value": 15000000,
+      "rarity": "mythical",
+      "image": "/images/bloxfruits/gravity.png"
+    },
+    {
+      "id": "spirit",
+      "name": "Spirit",
+      "value": 11000000,
+      "rarity": "mythical",
+      "image": "/images/bloxfruits/spirit.png"
+    },
+    {
+      "id": "mammoth",
+      "name": "Mammoth",
+      "value": 10000000,
+      "rarity": "mythical",
+      "image": "/images/bloxfruits/mammoth.png"
+    },
+    {
+      "id": "venom",
+      "name": "Venom",
+      "value": 8000000,
+      "rarity": "mythical",
+      "image": "/images/bloxfruits/venom.png"
+    },
+    {
+      "id": "shadow",
+      "name": "Shadow",
+      "value": 5000000,
+      "rarity": "mythical",
+      "image": "/images/bloxfruits/shadow.png"
+    },
+    {
+      "id": "lightning",
+      "name": "Lightning",
+      "value": 90000000,
+      "rarity": "legendary",
+      "image": "/images/bloxfruits/lightning.png"
+    },
+    {
+      "id": "pain",
+      "name": "Pain",
+      "value": 12000000,
+      "rarity": "legendary",
+      "image": "/images/bloxfruits/pain.png"
+    },
+    {
+      "id": "portal",
+      "name": "Portal",
+      "value": 10000000,
+      "rarity": "legendary",
+      "image": "/images/bloxfruits/portal.png"
     },
     {
       "id": "buddha",
       "name": "Buddha",
-      "type": "fruit",
+      "value": 10000000,
       "rarity": "legendary",
-      "value": 6000000,
-      "demand": 10,
       "image": "/images/bloxfruits/buddha.png"
     },
-     {
+    {
+      "id": "blizzard",
+      "name": "Blizzard",
+      "value": 4000000,
+      "rarity": "legendary",
+      "image": "/images/bloxfruits/blizzard.png"
+    },
+    {
+      "id": "sound",
+      "name": "Sound",
+      "value": 3000000,
+      "rarity": "legendary",
+      "image": "/images/bloxfruits/sound.png"
+    },
+    {
+      "id": "phoenix",
+      "name": "Phoenix",
+      "value": 2100000,
+      "rarity": "legendary",
+      "image": "/images/bloxfruits/phoenix.png"
+    },
+    {
+      "id": "creation",
+      "name": "Creation",
+      "value": 1800000,
+      "rarity": "legendary",
+      "image": "/images/bloxfruits/creation.png"
+    },
+    {
+      "id": "spider",
+      "name": "Spider",
+      "value": 1400000,
+      "rarity": "legendary",
+      "image": "/images/bloxfruits/spider.png"
+    },
+    {
+      "id": "love",
+      "name": "Love",
+      "value": 1300000,
+      "rarity": "legendary",
+      "image": "/images/bloxfruits/love.png"
+    },
+    {
+      "id": "quake",
+      "name": "Quake",
+      "value": 1000000,
+      "rarity": "legendary",
+      "image": "/images/bloxfruits/quake.png"
+    },
+    {
+      "id": "magma",
+      "name": "Magma",
+      "value": 1200000,
+      "rarity": "rare",
+      "image": "/images/bloxfruits/magma.png"
+    },
+    {
+      "id": "light",
+      "name": "Light",
+      "value": 800000,
+      "rarity": "rare",
+      "image": "/images/bloxfruits/light.png"
+    },
+    {
+      "id": "ghost",
+      "name": "Ghost",
+      "value": 800000,
+      "rarity": "rare",
+      "image": "/images/bloxfruits/ghost.png"
+    },
+    {
+      "id": "rubber",
+      "name": "Rubber",
+      "value": 750000,
+      "rarity": "rare",
+      "image": "/images/bloxfruits/rubber.png"
+    },
+    {
+      "id": "diamond",
+      "name": "Diamond",
+      "value": 800000,
+      "rarity": "uncommon",
+      "image": "/images/bloxfruits/diamond.png"
+    },
+    {
+      "id": "eagle",
+      "name": "Eagle",
+      "value": 750000,
+      "rarity": "uncommon",
+      "image": "/images/bloxfruits/eagle.png"
+    },
+    {
+      "id": "ice",
+      "name": "Ice",
+      "value": 600000,
+      "rarity": "uncommon",
+      "image": "/images/bloxfruits/ice.png"
+    },
+    {
+      "id": "dark",
+      "name": "Dark",
+      "value": 500000,
+      "rarity": "uncommon",
+      "image": "/images/bloxfruits/dark.png"
+    },
+    {
+      "id": "sand",
+      "name": "Sand",
+      "value": 420000,
+      "rarity": "uncommon",
+      "image": "/images/bloxfruits/sand.png"
+    },
+    {
+      "id": "flame",
+      "name": "Flame",
+      "value": 300000,
+      "rarity": "uncommon",
+      "image": "/images/bloxfruits/flame.png"
+    },
+    {
+      "id": "spike",
+      "name": "Spike",
+      "value": 180000,
+      "rarity": "common",
+      "image": "/images/bloxfruits/spike.png"
+    },
+    {
+      "id": "smoke",
+      "name": "Smoke",
+      "value": 100000,
+      "rarity": "common",
+      "image": "/images/bloxfruits/smoke.png"
+    },
+    {
+      "id": "bomb",
+      "name": "Bomb",
+      "value": 80000,
+      "rarity": "common",
+      "image": "/images/bloxfruits/bomb.png"
+    },
+    {
+      "id": "spring",
+      "name": "Spring",
+      "value": 60000,
+      "rarity": "common",
+      "image": "/images/bloxfruits/spring.png"
+    },
+    {
+      "id": "blade",
+      "name": "Blade",
+      "value": 30000,
+      "rarity": "common",
+      "image": "/images/bloxfruits/blade.png"
+    },
+    {
+      "id": "spin",
+      "name": "Spin",
+      "value": 7500,
+      "rarity": "common",
+      "image": "/images/bloxfruits/spin.png"
+    },
+    {
       "id": "rocket",
       "name": "Rocket",
-      "type": "fruit",
-      "rarity": "common",
       "value": 5000,
-      "demand": 1,
+      "rarity": "common",
       "image": "/images/bloxfruits/rocket.png"
+    },
+    {
+      "id": "gamepass-fruit-notifier",
+      "name": "Fruit Notifier",
+      "value": 700000000,
+      "rarity": "gamepass",
+      "image": "/images/bloxfruits/gamepass-fruit-notifier.png"
+    },
+    {
+      "id": "gamepass-dark-blade",
+      "name": "Dark Blade",
+      "value": 315000000,
+      "rarity": "gamepass",
+      "image": "/images/bloxfruits/gamepass-dark-blade.png"
+    },
+    {
+      "id": "gamepass-mythical-scroll",
+      "name": "Mythical Scroll",
+      "value": 300000000,
+      "rarity": "gamepass",
+      "image": "/images/bloxfruits/gamepass-mythical-scroll.png"
+    },
+    {
+      "id": "gamepass-legendary-scroll",
+      "name": "Legendary Scroll",
+      "value": 180000000,
+      "rarity": "gamepass",
+      "image": "/images/bloxfruits/gamepass-legendary-scroll.png"
+    },
+    {
+      "id": "gamepass-storage",
+      "name": "+1 Fruit Storage",
+      "value": 175000000,
+      "rarity": "gamepass",
+      "image": "/images/bloxfruits/gamepass-storage.png"
+    },
+    {
+      "id": "gamepass-2xbossdrops",
+      "name": "2x Boss Drops",
+      "value": 80000000,
+      "rarity": "gamepass",
+      "image": "/images/bloxfruits/gamepass-2xbossdrops.png"
+    },
+    {
+      "id": "gamepass-2xmastery",
+      "name": "2x Mastery",
+      "value": 75000000,
+      "rarity": "gamepass",
+      "image": "/images/bloxfruits/gamepass-2xmastery.png"
+    },
+    {
+      "id": "gamepass-fastboats",
+      "name": "Fast Boats",
+      "value": 50000000,
+      "rarity": "gamepass",
+      "image": "/images/bloxfruits/gamepass-fastboats.png"
+    },
+    {
+      "id": "gamepass-2xmoney",
+      "name": "2x Money",
+      "value": 50000000,
+      "rarity": "gamepass",
+      "image": "/images/bloxfruits/gamepass-2xmoney.png"
     }
   ]
 }
