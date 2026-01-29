@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <!-- Background circle -->
+  <circle cx="16" cy="16" r="15" fill="#3B82F6"/>
+  <!-- Fruit shape -->
+  <ellipse cx="16" cy="17" rx="9" ry="10" fill="#FBBF24"/>
+  <!-- Fruit shine -->
+  <ellipse cx="12" cy="14" rx="3" ry="4" fill="#FDE68A" opacity="0.6"/>
+  <!-- Leaf -->
+  <path d="M16 7 Q20 4 18 8 Q17 10 16 9 Q15 10 14 8 Q12 4 16 7" fill="#22C55E"/>
+  <!-- Stem -->
+  <rect x="15" y="6" width="2" height="3" rx="1" fill="#15803D"/>
+  <!-- Value symbol ($) -->
+  <text x="16" y="21" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#1E40AF" text-anchor="middle">$</text>
+</svg>

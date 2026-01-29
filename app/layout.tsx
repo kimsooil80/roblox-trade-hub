@@ -23,7 +23,8 @@ export const metadata: Metadata = {
   description: "The best Blox Fruits trading value calculator updated daily. Check fair trades for Kitsune, Dragon, and more.",
   keywords: ["Blox Fruits", "Value List", "Trade Calculator", "Roblox", "Tier List"],
   icons: {
-    icon: "/favicon.ico", // 나중에 아이콘도 바꾸면 좋습니다
+    icon: "/favicon.svg",
+    apple: "/apple-touch-icon.svg",
   },
 };
 
